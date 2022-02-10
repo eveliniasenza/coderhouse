@@ -1,0 +1,269 @@
+body {
+  background-color: #f9f1f0;
+}
+
+main {
+  grid-area: main;
+}
+
+header {
+  grid-area: header;
+  margin-bottom: 20px;
+}
+
+.footer {
+  background-color: #f8afa6;
+  width: 100%;
+  height: 6rem;
+  font-weight: 700px;
+  font-size: 16px;
+  font-family: "Source Sans Pro", sans-serif;
+  text-align: center;
+  padding-top: 4rem;
+  grid-area: footer;
+}
+.footer__sight {
+  color: #f9f1f0;
+}
+
+td {
+  border: 1px solid black;
+}
+
+th {
+  border: 2px solid black;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.customBody {
+  background-color: #f9f1f0;
+  display: grid;
+  grid-template-areas: "header header" "main main" "footer footer ";
+}
+
+.wrapper {
+  overflow: hidden;
+}
+
+.h1 {
+  font-size: 16px;
+}
+
+.wrapper:hover .customImg {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.size,
+.pink {
+  font-size: 16px;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: bold;
+}
+
+.pink {
+  color: #f59082 !important;
+}
+
+.content {
+  color: #403f3f;
+  font-size: 16px;
+  font-family: "Source Sans Pro", sans-serif;
+  padding: 0 20px 20px 20px;
+}
+
+.media {
+  padding-left: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.logo {
+  width: 100px;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+
+.card {
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.error {
+  font-size: 40px;
+  color: red;
+}
+
+.padding {
+  padding: 20px;
+}
+.padding__tab {
+  background-color: #fadcd9;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #403f3f;
+  padding: 30px;
+  width: 100%;
+  height: 6rem;
+  margin-bottom: 40px;
+}
+
+.contain {
+  padding-top: 20px;
+}
+.contain__bolder {
+  font-weight: 600;
+  font-size: "Source Sans Pro", sans-serif;
+}
+
+.title {
+  font-family: "Source Sans Pro", sans-serif;
+  color: #403f3f;
+  padding: 30px 0 0 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.grid {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+
+.photo {
+  grid-area: photo;
+}
+
+.opacity {
+  background-image: url("https://th.bing.com/th/id/R.f7a023ee0d15b1322de1efd1a56dc6d6?rik=QeByw36ADDu2Tw&pid=ImgRaw&r=0");
+  background-repeat: no-repeat;
+  opacity: 60%;
+  background-size: cover;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.opacity__text {
+  font-size: 20px;
+  font-family: "Source Sans Pro", sans-serif;
+  color: black;
+  padding: 40px 40px 0 40px;
+}
+.opacity .p1 {
+  font-size: 17px;
+}
+.opacity .p2 {
+  font-size: 18px;
+}
+.opacity .p3 {
+  font-size: 19px;
+}
+
+.bakery-cake {
+  background-image: url("/images/cake.jpg");
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+}
+
+.bakery-bread {
+  background-image: url("/images/bread.jpg");
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+}
+
+.bakery-cookies {
+  background-image: url("/images/cookies.jpg");
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+}
+
+.align {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Source Sans Pro", sans-serif;
+  color: black;
+  grid-area: align;
+}
+.align__profile {
+  border-radius: 50%;
+  width: 300px;
+  padding: 40px;
+}
+.align__profile__text {
+  font-family: "Source Sans Pro", sans-serif;
+  color: black;
+}
+
+.alignCenter {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.center {
+  text-align-last: center;
+}
+
+.justify {
+  justify-content: space-evenly;
+}
+
+.background {
+  max-width: 100%;
+  height: auto;
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    display: grid;
+    grid-template-areas: "header" "main" "footer ";
+  }
+  .grid {
+    display: grid;
+    grid-template-areas: "align" "photo";
+  }
+  .images,
+  .photo {
+    display: none;
+  }
+  .main {
+    display: flex;
+    flex-direction: column;
+  }
+  .profile {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  body {
+    display: grid;
+    grid-template-areas: "header" "main" "footer";
+  }
+  .images,
+  .photo {
+    display: none;
+  }
+  .grid {
+    display: grid;
+    grid-template-areas: "align" "photo";
+  }
+  .profile {
+    width: 80%;
+  }
+}
